@@ -21,7 +21,7 @@ namespace Ejercico_02
                 await Navigation.PopAsync();
             };
         }
-        async void OnNextPagettonClicked(object sender, EventArgs e)
+        async void OnNextPageButtonClicked(object sender, EventArgs e)
         {
             await Navigation.PushAsync(new Page2());
         }
