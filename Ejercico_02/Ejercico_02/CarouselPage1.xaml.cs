@@ -10,11 +10,15 @@ using Xamarin.Forms.Xaml;
 namespace Ejercico_02
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class CarouselPage1 : ContentPage
+	public partial class CarouselPage1 : CarouselPage
 	{
 		public CarouselPage1 ()
 		{
 			InitializeComponent ();
+			btnClose.Clicked += async (sender, e) =>
+			{
+				await Navigation.PopAsync();
+			};
 		}
 	}
 }

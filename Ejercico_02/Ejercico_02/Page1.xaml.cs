@@ -15,6 +15,15 @@ namespace Ejercico_02
         public Page1()
         {
             InitializeComponent();
+
+            btnClose.Clicked += async (sender, e) =>
+            {
+                await Navigation.PopAsync();
+            };
+        }
+        async void OnNextPagettonClicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new Page2());
         }
     }
 }

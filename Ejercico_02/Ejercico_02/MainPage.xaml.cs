@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -35,7 +36,8 @@ namespace Ejercico_02
             {
                 //call Popup
                 var answer = await DisplayAlert("Question?",
-                    )
+                    "Wold you like to play a game", "Yes", "No");
+                Debug.WriteLine("Answer: " + answer);
             };
 
         }
